@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>颠覆性技术识别与分析方法的述评(二) | 阅图</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="陈悦团队">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="阅图">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="颠覆性技术识别与分析方法的述评(二) | 阅图">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/">
+
+	
+	<meta property="article:published_time" content="2020-10-27T00:10:00+08:00"> 
+	<meta property="article:author" content="陈悦团队">
+	<meta property="article:published_first" content="阅图, /2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/">
+	
+
+	
+	
+	<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+	
+	
+	
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="阅图">
+                    <img src="/medias/logo.png" alt="阅图">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/archives" title="归档">归档</a>
+            </li>
+            
+            <li>
+                <a href="/about" title="团队介绍">团队介绍</a>
+            </li>
+            
+            <li>
+                <a href="/visual-platform" title="可视化平台">可视化平台</a>
+            </li>
+            
+            <li>
+                <a href="/friends" title="友情链接">友情链接</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/beichen1994" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-10-26T16:48:28.000Z">
+                    2020-10-27
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/智能制造领域/">智能制造领域</a>&nbsp;&nbsp;
+                
+                
+            </div>
+            <h1 class="post-full-title">颠覆性技术识别与分析方法的述评(二)</h1>
+        </header>
+        <div class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201119144330.png)">
+            </figure>
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <blockquote>
+<p>本项目与中国科学技术信息研究所合作完成</p>
+</blockquote>
+<h2 id="（四）智能制造的基础：工厂控制技术"><a href="#（四）智能制造的基础：工厂控制技术" class="headerlink" title="（四）智能制造的基础：工厂控制技术"></a>（四）智能制造的基础：工厂控制技术</h2><p>&ensp;&ensp;由于智能制造领域涉及的技术太宽泛，我们先期集中在智能制造的核心，即工厂控制领域，这是制造工厂中最基础的应用，核心是闭环控制系统。该领域的技术集中于IPC分类号G05B-019/418（全面工厂控制，即集中控制许多机器，例如直接或分布数字控制（DNC）、柔性制造系统（FMS）、集成制造系统（IMS）、计算机集成制造（CIM））。</p>
+<h3 id="（1）工厂控制领域的技术生命周期"><a href="#（1）工厂控制领域的技术生命周期" class="headerlink" title="（1）工厂控制领域的技术生命周期"></a>（1）工厂控制领域的技术生命周期</h3><p>&ensp;&ensp;在Derwent数据 库检索到工厂控制技术领域52,409项专利 ，通过专利申请人和申请量两个维度来反映了工厂控制技术的生命周期状况（图1）。根据发展阶段可将智能制造分为四个阶段：萌芽期（1972-1998年），发明人和发明专利相对较少，增长速度缓慢；初步发展期（1999-2004），该时间段发明人数量增速快于发明专利数量，展现了领域吸引力，但尚未体现发明家基数优势，年申请量未超过1000；快速发展期（2005-2013），该阶段专利数和发明人均呈现指数增长，其中申请专利速度快于发明人进入速度，说明早期进入该领域的专家已经在该领域广泛申请专利；成熟初期（2014-至今），该阶段早期发明人和专利申请量均有所下降，说明该领域发展遇到小的瓶颈，随后专利申请量继续下降，但发明人数量不降反增，可见工厂控制技术领域正在经历新一轮的人才储备，孕育着新一轮技术突破。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114231951.png" data-index="0" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114231951.png"></p>
+<h3 id="（2）工厂控制领域的技术活跃程度"><a href="#（2）工厂控制领域的技术活跃程度" class="headerlink" title="（2）工厂控制领域的技术活跃程度"></a>（2）工厂控制领域的技术活跃程度</h3><p>&ensp;&ensp;某个技术领域的活跃程度可以通过每年新进入该技术领域的新技术（新IPC号）来表征。自工程控制领域第一个专利诞生以来的47年间，工厂控制技术领域共新进入548个IPC分类号，涉及到了548项技术领域，每年新增的IPC分类号呈现持续增长趋势（图2），表明该领域不断与其他新技术进行融合，以保持着持续的创新能力。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232016.png" data-index="1" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232016.png"></p>
+<h3 id="（3）工厂控制领域的技术主题"><a href="#（3）工厂控制领域的技术主题" class="headerlink" title="（3）工厂控制领域的技术主题"></a>（3）工厂控制领域的技术主题</h3><p>&ensp;&ensp;通过基于改进的TF-IDF特征提取的K-means聚类方法，提取出工厂控制领域的四个技术主题（图3），即（1）单元数据处理、（2）生产线、（3）设备连接和（4）模块连接。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232037.png" data-index="2" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232037.png"></p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232055.png" data-index="3" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232055.png"></p>
+<p>&ensp;&ensp;在该领域，需关注5G的应用，它可提供极低时延长、高可靠，海量连接的网络，使得闭环控制应用通过无线网络连接成为可能。</p>
+<h2 id="（五）智能制造的核心：人工智能"><a href="#（五）智能制造的核心：人工智能" class="headerlink" title="（五）智能制造的核心：人工智能"></a>（五）智能制造的核心：人工智能</h2><p>&ensp;&ensp;人工智能和制造系统的结合将是必然的，利用机器学习、模式识别、认知分析等算法模型，可以提升工厂控制管理系统的能力，实现所谓的智能制造。智能制造过程主要围绕着智能工厂展开，而人工智能在智能工厂中发挥着重要的作用。物联网将所有的机器设备连接在一起，例如控制器、传感器、执行器的联网，然后，AI就可以分析传感器上传的数据，这就是智能制造的核心。</p>
+<h3 id="（1）人工智能的技术主题"><a href="#（1）人工智能的技术主题" class="headerlink" title="（1）人工智能的技术主题"></a>（1）人工智能的技术主题</h3><p>&ensp;&ensp;当现象簇（包括化学的、电子的、量子的）被开发并加以利用后，就自然而然地引起了技术的聚集，这种技术的集群就形成了技术域。人工智能技术作为一个大的技术域，又是由若干个子技术域构成，子技术域中包含组合技术，直至到基本的技术单元。本研究预构建一个人工智能技术的全域技术结构图，即构建人工智能技术树。</p>
+<p>&ensp;&ensp;我们采用基于凝聚层次聚类（AHC） 技术结构树生成模型来构建人工智能技术树。层次聚类算法的基本原理是通过计算不同类别数据点间的相似度来创建一棵有层次的嵌套聚类树，在聚类树中，不同类别的原始数据点是树的最底层，树的顶层是一个聚类的根节点。创建聚类树有自下而上合并和自上而下分裂两种方法，本文采取自下而上。我们分析的对象是一个具有层次结构的技术域，因而表征技术域的专利数据应该是具有结构层次的，但分几个层次尚未知，层次聚类方法可以较为有效地恢复文本层次、并对文本进行深度分类。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232116.png" data-index="4" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232116.png"></p>
+<p>&ensp;&ensp;层次越低的集群其聚类得到的技术关键词信息越专业（special），随着层次的上升，聚类簇越来越大，其所得到的技术关键词越来越通用（generic）。由图6.2可知，人工智能分为五个子类、分别是机器学习、计算机视觉、语音技术、数据检索和自然语言处理。</p>
+<h3 id="（2）人工智能技术演进脉络"><a href="#（2）人工智能技术演进脉络" class="headerlink" title="（2）人工智能技术演进脉络"></a>（2）人工智能技术演进脉络</h3><p>&ensp;&ensp;图3.3.1呈现出人工智能技术主题的演变经历了技术主题萌生、技术主题丛生和技术主题递归的三个发展阶段。1963-1976年间每年的人工智能技术主题差异性很大且单一，即“点”状发展，相互间关联度低，这是人工智能技术的萌生阶段。1977-2006年间，人工智能主题丛生，并表现出一定的连续性，这种丛生应该就是域内技术主题与域外技术主题的融合或内部形成的分支，这时呈现出“线”性演变状态。2007年至今在大数据和深度神经网络的驱动下人工智能技术主题趋于递归，即主题数量减少，但主导性增强，是最初技术主题萌芽时期的某种递归，或许在酝酿着新一轮的技术主题丛生。总体而言，人工智能技术经60多年的发展，经历了从“点”到“线”到“面”的技术主题演变过程。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232136.png" data-index="5" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232136.png"></p>
+<p>&ensp;&ensp;人工智能技术的萌生期（1963-1976）      1963-1976是人工智能发展的第一个黄金时期（图6.2），科学家将符号方法引入统计方法中进行予以处理，发明了多种具有重大影响的算法，如深度学习模型的雏形贝尔曼公式。这一阶段的专利申请量数量虽然不是很多，但在缓慢增长。这一时期的人工智能技术多用于机床控制、雷达设备、导弹等武器设备中，主要提出逻辑术语规则用来设计基本算法用于自动控制。磁带技术作为早期的数据存储技术也在这一时期出现并蓬勃发展，包含延时单元、基本内存单元、解码单元、控制单元、延时单元等的虚拟计算机在这一时期被设计用来进行自然语言处理和图像处理工作。早期的人工智能专利多用于军事和工业领域，智能化控制慢慢取代人类成为其领域的重器。这一段期间人工智能技术的起步来源于科学原理（贝尔曼公式）的发现以及不同领域知识的融合（将符号方法引入统计方法中）。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232204.png" data-index="6" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232204.png"></p>
+<p>&ensp;&ensp;人工智能技术的丛生期（1977-2006）  从1974年开始人工智能专利申请量涨幅开始变得很小，到1980年之后有小幅度跌落的情况，这种情况与人工智能技术发展步入低谷密不可分。由于数学模型的局限性以及计算复杂度程指数及增长，现有的算法无法完成计算任务，人工智能技术的发展陷入瓶颈。结合图6.3亦可以发现，这一时期有关中央处理器、随机存取存储器以及数据处理程序的专利申请较热，也说明当时为攻克硬件瓶颈一直做出的努力。进入20世纪80年代后，人工智能相关的数学模型取得一系列重大发明成果，其中包括著名的多层神经网络（1986年提出）和反向传播算法（1986年提出）等，这些算法催生了个人数字助理技术的发展，即高度智能机器。控制系统、移位寄存器、脉冲发生器、数据输入单元、数据输出单元等技术术语为代表的集成电路技术也一直处于较高的热度。以广域网、局域网、互联网协议移动终端、通信系统、移动电话技术术语为代表的电信行业通讯技术也非常活跃，闪存等新兴的计算机可读介质的替代了磁带可以储存更多的数据，控制方法技术管理机器臂等设备的行为，相关研究也大范围涌现。这一段时期主导技术、辅助技术、支撑技术等复杂技术群逐渐涌现并得到研究，共同构成了一个复杂技术体系。应用需求导向使各个行业产生变革，新技术替代旧技术。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232222.png" data-index="7" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232222.png"></p>
+<p>&ensp;&ensp;人工智能技术的递归期（2007-2018）  从2007年开始人工智能专利申请量急速上升，2013年是一个显著的拐点。从大背景下看待这种增长趋势，得益于互联网、社交媒体、移动设备和传感器的大量普及，全球产生并存储的数据量急剧增加，海量的的数据为人工智能算法模型提供了源源不断的素材，机器可以学习的数据愈多，发现的规律愈多。这也解释了随着局域网、广域网的发展，便携式计算机、智能手机、移动终端迅速普及对人工智能技术发展的重要性。除此之外，比往年显著增长且热度持续增高是卷积神经网络、神经网络这两个技术词汇，人工智能的又一次突破得益于深度卷积神经网络模型的提出和发展，值得一提的是李飞飞以及她举办的ImageNet大赛有力地推动了深度卷积神经网络模型的应用。2012年，Hinton与他的两名学生Alex和Sutskever提出了AlexNet卷积神经网络模型，借助ImageNet数据取得了令人瞩目的结果，驱动了新一代人工智能的加速发展。因此，海量化的数据，持续提升的运算力，不断优化的算法模型。结合多种场景的新应用已构成了相对完整的闭环，成为推动新一代人工智能发展的四大要素。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232239.png" data-index="8" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232239.png"></p>
+<p>&ensp;&ensp;从2007年至今，比往年显著增长且热度持续增高是卷积神经网络、神经网络这两个技术词汇，其在人工智能的各个子领域中得到了广泛的应用，包括智能手机、移动终端、便携式电脑、无人驾驶飞行器等。除此之外，图像处理、人脸识别等所用到的机器学习技术仍然占据主导地位，云服务器在这一阶段兴起及快速发展。</p>
+<h3 id="（2）机器学习是人工智能的核心"><a href="#（2）机器学习是人工智能的核心" class="headerlink" title="（2）机器学习是人工智能的核心"></a>（2）机器学习是人工智能的核心</h3><p>&ensp;&ensp;人工智能研究主题涉及广泛，但其核心是机器学习，它是实现人工智能的一个途径。机器学习直接来源于早期的人工智能领域，传统的算法包括决策树、聚类、贝叶斯分类、支持向量机、EM、Adaboost等等。从学习方法上来分，机器学习算法可以分为监督学习（如分类问题）、无监督学习（如聚类问题）、半监督学习、集成学习、深度学习和强化学习。本文中利用关键词共现方法测度机器学习领域的研究热点构成，进而对机器学习研究主题进行分析。</p>
+<p>&ensp;&ensp;关键字可以被视为关系网络中的节点，节点之间的连线可以被视为关键词共现的直观表现。在通过使用关键词共现绘制的网络中，由于关键词是否共现且共现频率不尽相同，导致在网络中每个关键词的地位也有所不同，有些关键词与其他关键词密切相关，而有些关键词则相对疏远。本研究通过中介中心性筛选出重要的关键词节点，通过度中心性测算出核心关键词，借助Gephi软件对关键词进行聚类分析并可视化，从而对研究领域的热点问题和发展情况有所了解。为便于分析，设置聚类的解析度为0.58，结果显示545个高频共现关键词（共现频次≥10）形成了7个聚类（图6.1），其具体信息见表8。这种聚类的繁杂程度也正说明了机器学习算法的多样性和研究领域的广泛性。图6.1突出显示的节点machine learning、deep learning、neural network、classification、SVM、genetic algorithm、feature extract等节点所在区域是重要的研究主题。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232259.png" data-index="9" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114232259.png"></p>
+<p>&ensp;&ensp;虽然将机器学习领域从七个分类呈现出其相对核心的研究主题，但实际上这七个聚类之间没有特别绝对的区域划分，它们之间通过1014条边互相联系在一起，相互结合，共同作用于医疗诊断、语音识别、视频图像处理、大数据挖掘、机器人、人脸及行为识别等领域中。</p>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                    <li>
+                        <a href="/tags/颠覆性技术/" rel="tag"># 颠覆性技术</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="颠覆性技术识别与分析方法的述评(三)" href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">
+            ← 颠覆性技术识别与分析方法的述评(三)
+        </a>
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="颠覆性技术识别与分析方法的述评(一)" href="/2020/10/26/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-yi/">
+            颠覆性技术识别与分析方法的述评(一) →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; 阅图 &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/">重点技术领域发展演变科学计量分析报告--机器学习</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">颠覆性技术识别理论与方法探索</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">颠覆性技术识别与分析方法的述评(三)</a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+    <header class="read-next-card-header tagcloud-card">
+        <h3 class="read-next-card-header-title">分类</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/智能制造领域/">智能制造领域</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/机器学习/">机器学习</a></li></ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/重点技术领域/" style="font-size: 14px;">重点技术领域</a> <a href="/tags/颠覆性技术/" style="font-size: 24px;">颠覆性技术</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="/favicon.png" alt="阅图">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="阅图">王玉奇 &copy; 2021</a>
+			
+				
+			        <span hidden="true" id="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/" class="leancloud-visitors" data-flag-title="颠覆性技术识别与分析方法的述评(二)">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: '',
+            appKey: '',
+            placeholder: 'Just go go',
+            pageSize: 10,
+            avatar: 'mm',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

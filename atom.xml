@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阅图</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yuetu-dut.github.io/"/>
+  <updated>2020-11-19T07:45:20.000Z</updated>
+  <id>http://yuetu-dut.github.io/</id>
+  
+  <author>
+    <name>陈悦团队</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重点技术领域发展演变科学计量分析报告--机器学习</title>
+    <link href="http://yuetu-dut.github.io/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/"/>
+    <id>http://yuetu-dut.github.io/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/</id>
+    <published>2020-11-19T03:47:50.000Z</published>
+    <updated>2020-11-19T07:45:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;ensp;&amp;ensp;机器学习是研究怎样使用计算机模拟或实现人类学习活动的科学，是人工智能中最具智能特征，最前沿的研究领域之一。机器学习不仅在基于知识的系统中得到应用，而且在自然语言理解、非单调推理、机器视觉、模式识别等许多领域也得到了广泛应用。一个系统是否具有学习能力已
+        
+      
+    
+    </summary>
+    
+      <category term="机器学习" scheme="http://yuetu-dut.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="重点技术领域" scheme="http://yuetu-dut.github.io/tags/%E9%87%8D%E7%82%B9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颠覆性技术识别理论与方法探索</title>
+    <link href="http://yuetu-dut.github.io/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/"/>
+    <id>http://yuetu-dut.github.io/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/</id>
+    <published>2020-11-01T15:07:59.000Z</published>
+    <updated>2020-11-19T07:45:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;本项目与中国科学技术信息研究所合作完成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;ensp;&amp;ensp;针对国家对发展颠覆性技术识别与分析的战略需求，以颠覆性技术发生和发展的认知空间为理论框架，基于多维数据（如论文、专利、基金项目、政策、商业报告
+        
+      
+    
+    </summary>
+    
+      <category term="智能制造领域" scheme="http://yuetu-dut.github.io/categories/%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E9%A2%86%E5%9F%9F/"/>
+    
+    
+      <category term="颠覆性技术" scheme="http://yuetu-dut.github.io/tags/%E9%A2%A0%E8%A6%86%E6%80%A7%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颠覆性技术识别与分析方法的述评(三)</title>
+    <link href="http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/"/>
+    <id>http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/</id>
+    <published>2020-10-26T17:02:18.000Z</published>
+    <updated>2020-11-19T07:45:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;本项目与中国科学技术信息研究所合作完成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;（六）智能制造的生产方式：增材制造&quot;&gt;&lt;a href=&quot;#（六）智能制造的生产方式：增材制造&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="智能制造领域" scheme="http://yuetu-dut.github.io/categories/%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E9%A2%86%E5%9F%9F/"/>
+    
+    
+      <category term="颠覆性技术" scheme="http://yuetu-dut.github.io/tags/%E9%A2%A0%E8%A6%86%E6%80%A7%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颠覆性技术识别与分析方法的述评(二)</title>
+    <link href="http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/"/>
+    <id>http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/</id>
+    <published>2020-10-26T16:48:28.000Z</published>
+    <updated>2020-11-19T07:45:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;本项目与中国科学技术信息研究所合作完成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;（四）智能制造的基础：工厂控制技术&quot;&gt;&lt;a href=&quot;#（四）智能制造的基础：工厂控制技术&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="智能制造领域" scheme="http://yuetu-dut.github.io/categories/%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E9%A2%86%E5%9F%9F/"/>
+    
+    
+      <category term="颠覆性技术" scheme="http://yuetu-dut.github.io/tags/%E9%A2%A0%E8%A6%86%E6%80%A7%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颠覆性技术识别与分析方法的述评(一)</title>
+    <link href="http://yuetu-dut.github.io/2020/10/26/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-yi/"/>
+    <id>http://yuetu-dut.github.io/2020/10/26/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-yi/</id>
+    <published>2020-10-26T15:02:16.000Z</published>
+    <updated>2020-11-19T07:45:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;本项目与中国科学技术信息研究所合作完成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;ensp;&amp;ensp;智能制造(Intelligent manufacturing, Smart
+        
+      
+    
+    </summary>
+    
+      <category term="智能制造领域" scheme="http://yuetu-dut.github.io/categories/%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E9%A2%86%E5%9F%9F/"/>
+    
+    
+      <category term="颠覆性技术" scheme="http://yuetu-dut.github.io/tags/%E9%A2%A0%E8%A6%86%E6%80%A7%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+</feed>

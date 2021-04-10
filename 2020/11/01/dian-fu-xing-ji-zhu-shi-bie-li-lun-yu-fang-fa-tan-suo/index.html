@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>颠覆性技术识别理论与方法探索 | 阅图</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="陈悦团队">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="阅图">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="颠覆性技术识别理论与方法探索 | 阅图">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://yuetu-dut.github.io/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">
+
+	
+	<meta property="article:published_time" content="2020-11-01T23:11:00+08:00"> 
+	<meta property="article:author" content="陈悦团队">
+	<meta property="article:published_first" content="阅图, /2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">
+	
+
+	
+	
+	<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+	
+	
+	
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="阅图">
+                    <img src="/medias/logo.png" alt="阅图">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/archives" title="归档">归档</a>
+            </li>
+            
+            <li>
+                <a href="/about" title="团队介绍">团队介绍</a>
+            </li>
+            
+            <li>
+                <a href="/visual-platform" title="可视化平台">可视化平台</a>
+            </li>
+            
+            <li>
+                <a href="/friends" title="友情链接">友情链接</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/beichen1994" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-11-01T15:07:59.000Z">
+                    2020-11-1
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/智能制造领域/">智能制造领域</a>&nbsp;&nbsp;
+                
+                
+            </div>
+            <h1 class="post-full-title">颠覆性技术识别理论与方法探索</h1>
+        </header>
+        <div class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201119144330.png)">
+            </figure>
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <blockquote>
+<p>本项目与中国科学技术信息研究所合作完成</p>
+</blockquote>
+<p>&ensp;&ensp;针对国家对发展颠覆性技术识别与分析的战略需求，以颠覆性技术发生和发展的认知空间为理论框架，基于多维数据（如论文、专利、基金项目、政策、商业报告等），通过颠覆性技术的全面画像和生成的动力机制提取颠覆性技术特征识别指标，创建机器学习模型并进行训练，从而能用于寻找未知的颠覆性技术。</p>
+<h2 id="（一）颠覆性技术发生与发展的认知空间理论"><a href="#（一）颠覆性技术发生与发展的认知空间理论" class="headerlink" title="（一）颠覆性技术发生与发展的认知空间理论"></a>（一）颠覆性技术发生与发展的认知空间理论</h2><p>&ensp;&ensp;本文所研究的颠覆性技术是国家视角下的战略创新技术，其更多地体现在技术的前沿性和复杂性，而这种类型的颠覆性技术源于一整套的认知体系，它是颠覆性技术生成和发展的认知空间，该认知空间是由“技术原理”、“技术体系”和“战略/导向”三个维度构成的（图2.1）。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234825.png" data-index="0" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234825.png"></p>
+<p>&ensp;&ensp;技术单元的融合和科学理论的突破是推动颠覆性技术生成和发展内在逻辑，这构成了颠覆性技术生成与发展的技术供给侧。由政府（企业）根据其发展战略所支持的基础科学研究和应用研究是颠覆性技术生成的源头，这构成了颠覆性技术生成与发展的科研开发侧。由核心主导技术和辅助技术构成的技术体系和市场需求共同推进了颠覆性的生成与发展，这构成了技术发展认知空间的产品创新侧。专利文献承载了大量的技术信息，其文本可以挖掘出技术单元，其论文引文可以追溯技术原理，其同族专利可以揭示潜在市场区域；论文文献承载了大量的与颠覆性技术相关的科学知识单元；研究项目，尤其是国家自然科学基金项目中承载了很多基础研究和战略性导向信息，政府政策文档和著名的商业报告中都包含有大量战略性导向信息，这些都是颠覆性技术发展的催生要素。</p>
+<h2 id="（二）颠覆性技术多源数据集的构建"><a href="#（二）颠覆性技术多源数据集的构建" class="headerlink" title="（二）颠覆性技术多源数据集的构建"></a>（二）颠覆性技术多源数据集的构建</h2><h3 id="（1）基于机器学习的专利数据集构建"><a href="#（1）基于机器学习的专利数据集构建" class="headerlink" title="（1）基于机器学习的专利数据集构建"></a>（1）基于机器学习的专利数据集构建</h3><p>&ensp;&ensp;由于本研究是从科学技术活动体系的视角来进行颠覆性技术的研究，因而以承载科技信息为主的科技文献为主要纲领性数据源，分析技术我们以专利数据为分析颠覆性技术的切入点，专利数据集的构建便是多源数据集构建的基础。颠覆性技术具有多学科综合、高度复杂的特征，这使得其往往界定模糊、涉及领域宽泛、技术术语多元，因而传统的关键词查询方法不再适用。为解决这一问题，我们的基本思想是将专利检索任务看作是机器学习的二分类任务（图3.2）。以统计学理论为基础，利用算法训练机器使其具有人类般的自动“学习”能力，即对已知的训练数据做统计分析从而获得规律，再运用规律对未知数据作预测分析。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234859.png" data-index="1" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234859.png"></p>
+<h3 id="（2）基于专利引文的科学文献数据集构建"><a href="#（2）基于专利引文的科学文献数据集构建" class="headerlink" title="（2）基于专利引文的科学文献数据集构建"></a>（2）基于专利引文的科学文献数据集构建</h3><p>&ensp;&ensp;专利引用的论文往往是重要的技术原理性的研究或是重要的理论突破，属于现代技术科学体系中的技术科学类研究，因而对这一类的论文文献进行分析，可以寻找到颠覆性技术的科学理论根源。在专利引文中，我们通过WoS号匹配等方法提取出其中的论文引文，在WoS数据库中进行重检索并成为科学文献数据集的种子集，以备后续做为颠覆性技术产生的基础研究源头分析。</p>
+<h3 id="（3）基于科研资助的科研项目数据库构建"><a href="#（3）基于科研资助的科研项目数据库构建" class="headerlink" title="（3）基于科研资助的科研项目数据库构建"></a>（3）基于科研资助的科研项目数据库构建</h3><p>&ensp;&ensp;当今的前沿科学技术研究大多是有科研资金资助的条件下进行的，而基础研究往往需要政府的战略资助导向，因而，本研究将通过WoS数据库筛选出资助项目及资助主体，选取重要的科研资助主体，如NSF、NSFC、DARPA等资助项目构建数据集。</p>
+<h3 id="（4）基于国家战略导向的政策文本数据库的构建"><a href="#（4）基于国家战略导向的政策文本数据库的构建" class="headerlink" title="（4）基于国家战略导向的政策文本数据库的构建"></a>（4）基于国家战略导向的政策文本数据库的构建</h3><p>&ensp;&ensp;本项研究将依据科技文献分析的结果选择相关的国家政府网站，搜集政策文件，并构建政策文本数据库以用于分析政府的政策导向对颠覆性技术发展的影响，重点关注的政府网站 包括，<a href="https://www.whitehouse.gov/ostp/" target="_blank" rel="noopener">美国科技政策办公室</a>、<a href="http://www.most.gov.cn/kjzc/" target="_blank" rel="noopener">中国科学技术部</a>、<a href="https://www.ndrc.gov.cn/xxgk/wjk/" target="_blank" rel="noopener">国家发展与改革委员会</a>和<a href="http://www.moe.gov.cn/jyb_xwfb/s271/" target="_blank" rel="noopener">教育部</a>等。</p>
+<h3 id="（5）基于市场战略导向商业报告数据集构建"><a href="#（5）基于市场战略导向商业报告数据集构建" class="headerlink" title="（5）基于市场战略导向商业报告数据集构建"></a>（5）基于市场战略导向商业报告数据集构建</h3><p>&ensp;&ensp;商业报告往往由于它们分析的多维度和高质量而成为技术创新的重要知识来源，而且它们都会世界范围内的各种用户产生深远的影响，包括投资公司、生产企业以及消费者。我们选择Forrester、Frost &amp; Sullivan、Gartner、IDC和Ovum五家著名的产业分析报告为数据源，截止到2020年2月末，共搜集到报告39152条，其中涉及到的智能制造的几个领域数据如表2.1所示。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234925.png" data-index="2" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234925.png"></p>
+<h2 id="（三）基于技术发展内在机制的颠覆性技术演变路径绘制"><a href="#（三）基于技术发展内在机制的颠覆性技术演变路径绘制" class="headerlink" title="（三）基于技术发展内在机制的颠覆性技术演变路径绘制"></a>（三）基于技术发展内在机制的颠覆性技术演变路径绘制</h2><h3 id="（1）基于技术融合的颠覆性技术体系的生成及其形态结构变化"><a href="#（1）基于技术融合的颠覆性技术体系的生成及其形态结构变化" class="headerlink" title="（1）基于技术融合的颠覆性技术体系的生成及其形态结构变化"></a>（1）基于技术融合的颠覆性技术体系的生成及其形态结构变化</h3><p>&ensp;&ensp;技术融合可以提供高性能的新技术或是颠覆性技术。当已有技术与新技术融合时，新技术通过新旧技术成熟期的交接来实现对已有技术的颠覆，或者已有技术之间的融合可以产生突破性技术方案。本研究将通过专利文献及论文文献中蕴含着丰富的技术知识信息，利用文献之间引证关系及其变化，绘制“技术树”，借以来揭示颠覆性技术体系的形态与结构变化（图2.2），在定量分析基础上将领域专家的专业性解读加以结合，增强分析的科学性、可行性。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234946.png" data-index="3" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234946.png"></p>
+<h3 id="（2）基于技术主题的颠覆性技术演进脉络"><a href="#（2）基于技术主题的颠覆性技术演进脉络" class="headerlink" title="（2）基于技术主题的颠覆性技术演进脉络"></a>（2）基于技术主题的颠覆性技术演进脉络</h3><p>&ensp;&ensp;基于专利分析随着时间演变各个技术主题的演化过程分析，我们提出了动态技术主题演化模型。该模型可以实现：时间-主题词矩阵；主题-时间词矩阵；文档的主题偏好矩阵；文档相似性度量矩阵。该模型主要分为三步。第一阶段是对专利文本数据进行预处理，抽取专利的标题和文本信息，去除特殊符号并进行词语的标准化处理；第二阶段使用改进的RAKE算法从标题和摘要中深度挖掘技术关键词；第三阶段通过可视化工具绘制技术发展路径图谱，实现人机互动需求。其算法流程如下：</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235013.png" data-index="4" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235013.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235037.png" data-index="5" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235037.png"></p>
+<h3 id="（3）基于技术原理性知识的颠覆性技术源头追溯"><a href="#（3）基于技术原理性知识的颠覆性技术源头追溯" class="headerlink" title="（3）基于技术原理性知识的颠覆性技术源头追溯"></a>（3）基于技术原理性知识的颠覆性技术源头追溯</h3><p>&ensp;&ensp;专利的论文引文蕴含着技术科学信息，专利引文和论文引文分别可以用来标志某项技术（施引专利）的技术单元和技术原理（或基础研究）。本项研究将通过颠覆性技术“专利-引文”混合网络及相关的论文文献分析揭示其发展的原理性技术源头分析（图2.3）。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235100.png" data-index="6" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235100.png"></p>
+<h3 id="（4）技术体系更迭创新性判断"><a href="#（4）技术体系更迭创新性判断" class="headerlink" title="（4）技术体系更迭创新性判断"></a>（4）技术体系更迭创新性判断</h3><p>&ensp;&ensp;我们通过专利引文分析法来判断技术体系的创新性，以此判断颠覆性技术体系的更迭。从技术组合的广度出发我们认为专利的参考专利中包含的技术子域越多，说明技术的组件或原理的结合越丰富，该技术的重组新颖性越高。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235127.png" data-index="7" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235127.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235142.png" data-index="8" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235142.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235201.png" data-index="9" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235201.png"></p>
+<h2 id="（三）基于F-measure特征最大化测度的颠覆性技术认知空间的特征提取"><a href="#（三）基于F-measure特征最大化测度的颠覆性技术认知空间的特征提取" class="headerlink" title="（三）基于F-measure特征最大化测度的颠覆性技术认知空间的特征提取"></a>（三）基于F-measure特征最大化测度的颠覆性技术认知空间的特征提取</h2><p>&ensp;&ensp;我们的主要研究方法是基于颠覆性技术认知空间特征提取与特征选择展开的，即特征最大化方法。特征最大化是一种无偏度方法，还可以用于分类的质量评估。在无监督学习（如聚类）中，特征最大化方法能够通过提取聚类关联特征来进行聚类标签、主题提取、可视化和聚类优化模型检测。它的主要优点是无参数，适用于高维数据聚类及算法设计，并在分化和泛化之间表现出比通常指标（欧几里德、余弦或卡方）更好的和解性。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235249.png" data-index="10" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235249.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235315.png" data-index="11" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235315.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235337.png" data-index="12" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235337.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235353.png" data-index="13" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235353.png"></p>
+<p>&ensp;&ensp;也就是说，被判定给某聚类的关联特征的F值既要大于所属聚类的F平均值，也要大于所属分区所有特征的平均特征值。</p>
+<h2 id="（四）基于机器学习的颠覆性技术发生发展的特征指标模型构建"><a href="#（四）基于机器学习的颠覆性技术发生发展的特征指标模型构建" class="headerlink" title="（四）基于机器学习的颠覆性技术发生发展的特征指标模型构建"></a>（四）基于机器学习的颠覆性技术发生发展的特征指标模型构建</h2><p>&ensp;&ensp;我们尝试另辟蹊径挖掘颠覆性技术的显性特征和潜在性特征，将颠覆性技术识别过程看做一个文本分类过程，提出融合深度学习特征和人工特征的颠覆性技术特征学习方法，得到分类模型用以预测未来的颠覆性技术。我们的研究思路是，首先构建颠覆性技术专利数据集，然后对已知的颠覆性技术建立人工特征和文本特征，人工特征使用多分类支持向量机模型训练，文本特征利用我们构建的卷积神经网络模型训练，接下来串联两种机器学习特征得到完整的颠覆性技术特征，最后利用TextCNN模型得到最终的分类模型（图2.4）。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235412.png" data-index="14" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235412.png"></p>
+<h3 id="（1）特征工程"><a href="#（1）特征工程" class="headerlink" title="（1）特征工程"></a>（1）特征工程</h3><p>&ensp;&ensp;分类模型的识别准确率在很大程度上取决于特征工程的构建，由于颠覆性技术存在着许多已知和未知的特征，对于已知的特征我们建立其人工特征矩阵，本研究中我们使用人工智能、3D打印等专利数据作为我们的的样本数据集，首先人工构建关于专利信息的特征矩阵，包含专利的申请时间、专利引文数量、专利IPC数量、专利被引量等等。对于专利文本特征，我们需要将文本数学化表示。我们使用词嵌入模型（Word2vec模型）将词转变为固定维数的向量，Word2vec模型是浅层的、双层的神经网络，用于生成词嵌入向量模型，其核心思想与自动编码器类似，即将某个单词作为输入的隐藏层，并试图重新建构单词的上下文。Word2vec将大量文本作为其输入，并且产生几百维的向量空间，文档中的每一个唯一的单词在向量空间中被映射为一个固定长度的短向量，向量空间即文档集合词语的向量表示。向量距离代表词语之间的相似程度，聚类算法使得语义上相似的单词在嵌入空间里距离很近。</p>
+<h3 id="（2）分类模型选择"><a href="#（2）分类模型选择" class="headerlink" title="（2）分类模型选择"></a>（2）分类模型选择</h3><p>&ensp;&ensp;基于以上内容，人工特征和文本特征已经准备完毕，由于人工特征和文本特征的差异化较大，我们分别使用不同的分类器进行训练。必须值得一提的是，不同的分类器在不同的特征上有不同的表达能力，我们可以结合各自的优势，得到一个相对最优模型，这对于提高模型的最终预测是十分重要的一个步骤。</p>
+<p>&ensp;&ensp;在前期工作的基础上，分类器1我们选用了多分类支持向量机（SVM）模型，分类器2我们使用了自己搭建的卷积神经网络（CNN）模型（图3.6），通过第一层的两个学习器后，有效的特征已经被学习出来了，分类器3我们使用了TextCNN模型训练最终的模型，用以在新的文本中预测颠覆性技术。<br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235432.png" data-index="15" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114235432.png"></p>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                    <li>
+                        <a href="/tags/颠覆性技术/" rel="tag"># 颠覆性技术</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="重点技术领域发展演变科学计量分析报告--机器学习" href="/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/">
+            ← 重点技术领域发展演变科学计量分析报告--机器学习
+        </a>
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="颠覆性技术识别与分析方法的述评(三)" href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">
+            颠覆性技术识别与分析方法的述评(三) →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; 阅图 &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/">重点技术领域发展演变科学计量分析报告--机器学习</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">颠覆性技术识别理论与方法探索</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">颠覆性技术识别与分析方法的述评(三)</a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+    <header class="read-next-card-header tagcloud-card">
+        <h3 class="read-next-card-header-title">分类</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/智能制造领域/">智能制造领域</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/机器学习/">机器学习</a></li></ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/重点技术领域/" style="font-size: 14px;">重点技术领域</a> <a href="/tags/颠覆性技术/" style="font-size: 24px;">颠覆性技术</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="/favicon.png" alt="阅图">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="阅图">王玉奇 &copy; 2021</a>
+			
+				
+			        <span hidden="true" id="/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/" class="leancloud-visitors" data-flag-title="颠覆性技术识别理论与方法探索">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: '',
+            appKey: '',
+            placeholder: 'Just go go',
+            pageSize: 10,
+            avatar: 'mm',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

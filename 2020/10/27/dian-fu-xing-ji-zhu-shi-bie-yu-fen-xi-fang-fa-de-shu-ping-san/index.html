@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>颠覆性技术识别与分析方法的述评(三) | 阅图</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="陈悦团队">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="阅图">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="颠覆性技术识别与分析方法的述评(三) | 阅图">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">
+
+	
+	<meta property="article:published_time" content="2020-10-27T01:10:00+08:00"> 
+	<meta property="article:author" content="陈悦团队">
+	<meta property="article:published_first" content="阅图, /2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">
+	
+
+	
+	
+	<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+	
+	
+	
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="阅图">
+                    <img src="/medias/logo.png" alt="阅图">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/archives" title="归档">归档</a>
+            </li>
+            
+            <li>
+                <a href="/about" title="团队介绍">团队介绍</a>
+            </li>
+            
+            <li>
+                <a href="/visual-platform" title="可视化平台">可视化平台</a>
+            </li>
+            
+            <li>
+                <a href="/friends" title="友情链接">友情链接</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/beichen1994" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-10-26T17:02:18.000Z">
+                    2020-10-27
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/智能制造领域/">智能制造领域</a>&nbsp;&nbsp;
+                
+                
+            </div>
+            <h1 class="post-full-title">颠覆性技术识别与分析方法的述评(三)</h1>
+        </header>
+        <div class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201119144330.png)">
+            </figure>
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <blockquote>
+<p>本项目与中国科学技术信息研究所合作完成</p>
+</blockquote>
+<h2 id="（六）智能制造的生产方式：增材制造"><a href="#（六）智能制造的生产方式：增材制造" class="headerlink" title="（六）智能制造的生产方式：增材制造"></a>（六）智能制造的生产方式：增材制造</h2><h3 id="（1）增材制造的技术生命"><a href="#（1）增材制造的技术生命" class="headerlink" title="（1）增材制造的技术生命"></a>（1）增材制造的技术生命</h3><p>&ensp;&ensp;在Derwent数据库检索到增材制造技术领域31,487项专利 ，通过专利申请人和申请量两个维度来反映了增材制造技术的生命周期状况（图1）。根据发展阶段可将增材制造分为两个阶段：萌芽期（1967-2011年），发明人和发明专利相对较少，增长速度缓慢；快速发展期（2012-至今），该阶段专利数和发明人均呈现指数增长，其中2012-2015年每年发明人总量大于专利申请量，展现了领域吸引力，大量科学家进入，但尚未充分发挥科学家基数优势；2016年至今专利申请量已超过发明人数量，科学家基数优势已逐渐显现，但总体来说两者之间的差异仍较小，增材制造技术发展前景依然广阔。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234022.png" data-index="0" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234022.png"></p>
+<h3 id="（2）增材制造的技术活跃"><a href="#（2）增材制造的技术活跃" class="headerlink" title="（2）增材制造的技术活跃"></a>（2）增材制造的技术活跃</h3><p>&ensp;&ensp;某个技术领域的活跃程度可以通过每年新进入该技术领域的新技术（新IPC号）来表征。增材制造领域第一个专利诞生以来的53年间，增材制造技术领域共新进入480个IPC分类号，涉及到了480项技术领域，每年新增的IPC分类号呈现持续增长趋势（图2），表明该领域不断与其他新技术进行融合，以保持着持续的创新能力。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234041.png" data-index="1" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234041.png"></p>
+<h3 id="（3）增材制造的技术主题"><a href="#（3）增材制造的技术主题" class="headerlink" title="（3）增材制造的技术主题"></a>（3）增材制造的技术主题</h3><p>&ensp;&ensp;通过Rake算法提取关键词并经过人工规整，将数据导入VOSviewer软件进行技术主题聚类，共提取增材制造领域的四个技术主题（图3），即（1）3D打印机、（2）3D打印工艺与材料、（3）3D打印控制系统和（4）3D打印废料回收，具体所含主题词如表1所示。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234101.png" data-index="2" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234101.png"></p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234124.png" data-index="3" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234124.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234150.png" data-index="4" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234150.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234217.png" data-index="5" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234217.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234254.png" data-index="6" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234254.png"></p>
+<p>&ensp;&ensp;3D打印机又称三维打印机，是一种累积制造技术，即快速成形技术的一种机器，它是一种数字模型文件为基础，运用特殊蜡材、粉末状金属或塑料等可粘合材料，通过打印一层层的粘合材料来制造三维的物体。该主题下主要包括3D打印机的各种设备，如：3D打印机头、打印机主体、固定连接、印刷平台、底板、旋转轴、喷头、螺杆、导轨、机架、滑块、连杆、上表面、支撑板、固定板；以及各种打印装置：如喂料装置、加热装置、驱动装置、清洁装置、挤出装置、固定装置、升降装置、检测装置、调整装置、喷嘴装置、移动装置、校平装置等。</p>
+<p>&ensp;&ensp;材料和工艺作为增材制造技术发展的重要基础，在某种程度上，材料的发展决定着增材制造能否有更广泛的应用，工艺的发展决定着增材制造能否有更好的应用。该主题聚类下包含的材料有：聚乳酸、丙烯腈丁二烯苯乙烯、复合材料、建筑材料、印刷材料、金属粉、光敏树脂、碳纤维、钛合金、陶瓷粉、环氧树脂、玻璃纤维、聚乙烯醇、氧化石墨烯、聚乙二醇等。常用的增材制造工艺有熔融沉积建模，光固化树脂、选择性激光烧结、选择性激光熔化。</p>
+<p>&ensp;&ensp;3D打印控制系统。通过计算机辅助设计的模型如何利用3D打印机对其进行快速成型需要精密的系统控制。计算机控制系统就像核心的“大脑”一样精确地控制着3D打印流程的顺利进行，其主要由电子、机械和软件三部分控制系统构成。</p>
+<p>&ensp;&ensp;3D打印废料回收。3D打印是通过增材的方式以减少资源的浪费，属于环保型技术。但与此同时3D打印的材料以及打印过程产生的部分废料、废气如果处理不当也存在着一定的安全隐患。如美国加州大学河滨分校的研究人员发现，一些商业3D打印机制造的物品对某些鱼类胚胎来说具有致命毒性。因此，如何鉴别有毒材料以及如何处理废料值得进一步关注。</p>
+<h2 id="（七）智能制造的赋能技术：量子计算"><a href="#（七）智能制造的赋能技术：量子计算" class="headerlink" title="（七）智能制造的赋能技术：量子计算"></a>（七）智能制造的赋能技术：量子计算</h2><p>&ensp;&ensp;量子计算（Quantum computing）作为下一代信息技术的核心，被称为“自然赋予人类的终极计算能力”，是下一代算力提升的突破点，能够使智能制造得到质的提高。它是基于量子力学和计算机的交叉学科，是一个全新的学科，它是以量子比特为基本单元，基于量子力学的原理，借助量子叠加、纠缠和干涉的特性，进行高速的数学和逻辑运算、存储及处理。</p>
+<h3 id="（1）量子计算领域的技术生命周期"><a href="#（1）量子计算领域的技术生命周期" class="headerlink" title="（1）量子计算领域的技术生命周期"></a>（1）量子计算领域的技术生命周期</h3><p>&ensp;&ensp;在Derwent数据 库检索到量子计算技术领域12482项专利，通过专利申请人和申请量两个维度来反映了量子计算技术的生命周期状况（图1）。从图中，可以发现目前量子计算的发展经历了两个阶段：萌芽期（1965年-1999年）、快速发展期（2000年至今）。</p>
+<p>&ensp;&ensp;在萌芽期，发明人和发明专利相对较少，增长速度缓慢，年申请量未超过500。1999年之前，量子计算的研究主要是关于理论探索和算法研究。理论探索包括1982 年，Benioff提出量子计算机概念，Feynman也提出利用量子系统进行信息处理的设想；1985年，Deutsch算法首次验证了量子计算并行性，算法研究包括1994 和1996 年，Shor 算法和Grover算法分别提出。前者是一种针对整数分解问题的量子算法，后者是一种数据库搜索算法。这两种量子算法在特定问题上展现出优于经典算法的巨大优势，引起了科学界对量子计算的真正重视。</p>
+<p>&ensp;&ensp;在快速发展期，该时间段发明人数量增速快于发明专利数量，展现了领域吸引力，在今后的一段时间内，专利数和发明人将会呈现指数增长。2000年以来，随着科技企业积极布局，量子计算进入了技术验证和原理样机研制的阶段。2000年，DiVincenzo提出建造量子计算机的判据。此后，加拿大D-Wave公司率先推动量子计算机商业化，IBM、谷歌、微软等科技巨头也陆续开始布局量子计算。2018 年，谷歌发布了72量子位超导量子计算处理器芯片。2019年，IBM发布最新IBMQ System One量子计算机，提出衡量量子计算进展的专用性能指标——量子体积，并据此提出了“量子摩尔定律”，即量子计算机的量子体积每年增加一倍。若该规律成立，则人类有望在10年内实现量子霸权。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234436.png" data-index="7" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234436.png"></p>
+<h3 id="（2）量子计算领域的技术活跃程度"><a href="#（2）量子计算领域的技术活跃程度" class="headerlink" title="（2）量子计算领域的技术活跃程度"></a>（2）量子计算领域的技术活跃程度</h3><p>&ensp;&ensp;某个技术领域的活跃程度可以通过每年新进入该技术领域的新技术（新IPC号）来表征。自量子计算领域第一个专利诞生以来的55年间，量子计算技术领域共新进入6671个IPC分类号，涉及到了26个学科类别，每年新增的IPC分类号呈现持续增长趋势（图2），表明该领域不断与其他新技术和学科进行融合，以保持着持续的创新能力。</p>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234519.png" data-index="8" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234519.png"></p>
+<h3 id="（3）量子计算领域的技术主题"><a href="#（3）量子计算领域的技术主题" class="headerlink" title="（3）量子计算领域的技术主题"></a>（3）量子计算领域的技术主题</h3><p>&ensp;&ensp;通过Vosviwer对专利数据提取标题和摘要进行共线分析，提取出量子计算领域的六个技术主题（图3），即</p>
+<ul>
+<li>（1）图像信号编码技术</li>
+<li>（2）量子密钥</li>
+<li>（3）量子点</li>
+<li>（4）硅基量子芯片</li>
+<li>（5）纳米材料</li>
+<li>（6）量子器件。</li>
+</ul>
+<p><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234616.png" data-index="9" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234616.png"><br><img alt class="post-img b-lazy" data-img="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234635.png" data-index="10" data-src="https://beichen1994-paper.oss-cn-beijing.aliyuncs.com/yuetudut/20201114234635.png"></p>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                    <li>
+                        <a href="/tags/颠覆性技术/" rel="tag"># 颠覆性技术</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="颠覆性技术识别理论与方法探索" href="/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">
+            ← 颠覆性技术识别理论与方法探索
+        </a>
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="颠覆性技术识别与分析方法的述评(二)" href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/">
+            颠覆性技术识别与分析方法的述评(二) →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; 阅图 &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/">重点技术领域发展演变科学计量分析报告--机器学习</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/">颠覆性技术识别理论与方法探索</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/">颠覆性技术识别与分析方法的述评(三)</a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+    <header class="read-next-card-header tagcloud-card">
+        <h3 class="read-next-card-header-title">分类</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/智能制造领域/">智能制造领域</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/机器学习/">机器学习</a></li></ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/medias/background.jpg)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/重点技术领域/" style="font-size: 14px;">重点技术领域</a> <a href="/tags/颠覆性技术/" style="font-size: 24px;">颠覆性技术</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="/favicon.png" alt="阅图">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="阅图">王玉奇 &copy; 2021</a>
+			
+				
+			        <span hidden="true" id="/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-san/" class="leancloud-visitors" data-flag-title="颠覆性技术识别与分析方法的述评(三)">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: '',
+            appKey: '',
+            placeholder: 'Just go go',
+            pageSize: 10,
+            avatar: 'mm',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
