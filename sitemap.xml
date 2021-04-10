@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yuetu-dut.github.io/2020/11/19/chong-dian-ji-zhu-ling-yu-fa-zhan-yan-bian-ke-xue-ji-liang-fen-xi-bao-gao-ji-qi-xue-xi/</loc>
+    <loc>http://yuetu-dut.github.io/about/index.html</loc>
     
-    <lastmod>2020-11-19T07:45:20.000Z</lastmod>
+    <lastmod>2021-04-10T05:48:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yuetu-dut.github.io/visual-platform/index.html</loc>
+    
+    <lastmod>2021-04-10T05:44:44.000Z</lastmod>
     
   </url>
   
@@ -23,13 +30,6 @@
   </url>
   
   <url>
-    <loc>http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/</loc>
-    
-    <lastmod>2020-11-19T07:45:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yuetu-dut.github.io/2020/11/01/dian-fu-xing-ji-zhu-shi-bie-li-lun-yu-fang-fa-tan-suo/</loc>
     
     <lastmod>2020-11-19T07:45:20.000Z</lastmod>
@@ -37,16 +37,9 @@
   </url>
   
   <url>
-    <loc>http://yuetu-dut.github.io/about/index.html</loc>
+    <loc>http://yuetu-dut.github.io/2020/10/27/dian-fu-xing-ji-zhu-shi-bie-yu-fen-xi-fang-fa-de-shu-ping-er/</loc>
     
-    <lastmod>2020-11-02T00:42:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yuetu-dut.github.io/visual-platform/index.html</loc>
-    
-    <lastmod>2020-11-02T00:42:44.000Z</lastmod>
+    <lastmod>2020-11-19T07:45:20.000Z</lastmod>
     
   </url>
   
@@ -79,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://yuetu-dut.github.io/contact/index.html</loc>
+    <loc>http://yuetu-dut.github.io/tags/index.html</loc>
     
     <lastmod>2020-10-25T01:09:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yuetu-dut.github.io/tags/index.html</loc>
+    <loc>http://yuetu-dut.github.io/contact/index.html</loc>
     
     <lastmod>2020-10-25T01:09:40.000Z</lastmod>
     
